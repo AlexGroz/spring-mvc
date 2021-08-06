@@ -17,8 +17,8 @@ public class AccountService {
         return accountRepository.save(new Account(name, email)).getAccountId();
     }
 
-    public Optional findAccountById(Long accountId) {
-        return accountRepository.findById(accountId);
+    public Account findAccountById(Long accountId) {
+        return accountRepository.findOne(accountId);
     }
 
 }
