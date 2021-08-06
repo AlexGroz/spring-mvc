@@ -34,6 +34,7 @@ public class DatabaseConfig {
         return entityManagerFactoryBean;
     }
 
+    @Bean
     public PlatformTransactionManager transactionManager(){
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(entityManagerFactoryBean().getObject());
