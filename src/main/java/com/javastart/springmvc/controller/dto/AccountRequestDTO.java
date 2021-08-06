@@ -2,7 +2,8 @@ package com.javastart.springmvc.controller.dto;
 
 public class AccountRequestDTO {
 
-
+    private String name;
+    private String email;
 
     public String getName() {
         return name;
